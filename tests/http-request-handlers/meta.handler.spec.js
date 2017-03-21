@@ -1,5 +1,4 @@
 import * as chai from 'chai';
-
 import server from '../test-helpers/server.mock';
 
 const expect = chai.expect;
