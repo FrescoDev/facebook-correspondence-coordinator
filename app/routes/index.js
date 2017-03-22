@@ -4,7 +4,7 @@ import { Router } from 'express'
 
 const routes = new Router()
 
-routes.post('/inbox', correspondent.router())
+routes.use('/inbox', correspondent.router())
 routes.get('/meta', MetaHandler.index)
 
 export default routes
