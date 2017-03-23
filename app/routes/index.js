@@ -1,5 +1,5 @@
 import MetaHandler from '../http-request-handlers/meta.handler'
-import correspondent from '../../facebook-correspondence-coordinator'
+import correspondent from '../../service'
 import { Router } from 'express'
 
 const routes = new Router()
