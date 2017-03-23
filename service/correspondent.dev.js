@@ -1,23 +1,11 @@
-import {correspondent, response} from './correspondent-factory';
+const correspondent = require('fb-local-chat-bot');
+import settings from '../app/configuration';
 
-correspondent.on('message', async message => {
+correspondent.init(settings.fb.myPageToken, settings.fb.myVerification, true, false);
 
-  const {sender} = message;
-
-  try {
-
-    response.add({text: 'Hi! :)'});
-
-    await correspondent.send(sender.id, response);
-
-  } catch (err) {
-    // eslint-disable-next-line no-console
-    console.error(err)
-    
-    response.add({text: 'For some reason that broke me, try again?'});
-
-    await correspondent.send(sender.id, response);
-  }
+correspondent.on('text', (event) => {
+  const senderID = event.sender.id;
+  correspondent.sendText(senderID, 'Hi')
 });
 
-export default correspondent
+export default correspondent;
