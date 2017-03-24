@@ -15,6 +15,7 @@ The F.C.C. API is a high level coordinator application responsible for communica
 * docker
 * nodemon
 * heroku-cli
+* babel
 
 ### Install and Run Locally
 
