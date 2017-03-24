@@ -1,4 +1,4 @@
-# facebook-correspondence-coordinator
+# Facebook Correspondence Coordinator
 
 The F.C.C. API is a high level coordinator application responsible for communication coordination between NioBi's system and the Facebook messenger user client.
 
