@@ -4,12 +4,12 @@
     "description": "facebook-correspondence-coordinator",
     "main": "index.js",
     "scripts": {
-        "build": "babel app -d build/app && babel service -d build/service",
+        "build": "babel app -d build/app && babel app.service -d build/app.service",
         "postinstall": "npm run build",
         "clean": "rm -rf build && mkdir build",
         "start": "nodemon index.js",
         "start-dev": "babel-watch index.js",
-        "test": "mocha --recursive --reporter spec --compilers js:babel-register tests",
+        "test": "mocha --recursive --reporter spec --compilers js:babel-register app.tests",
         "test:watch": "nodemon --exec 'npm run test' tests",
         "validate": "npm run test && npm outdated --depth 0"
     },

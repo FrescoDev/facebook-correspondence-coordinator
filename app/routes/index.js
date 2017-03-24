@@ -1,5 +1,5 @@
 import MetaHandler from '../http-request-handlers/meta.handler'
-import correspondent from '../../service'
+import correspondent from '../../app.service'
 import { Router } from 'express'
 
 const routes = new Router()
