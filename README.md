@@ -1,9 +1,11 @@
 # facebook-correspondence-coordinator
 
-This service is responsible for SERVICE_PURPOSE. 
+The F.C.C. API is a high level coordinator application responsible for communication coordination between NioBi's system and the Facebook messenger user client.
 
-DEV URL: [tbd]
-LIVE URL: [tbd]
+[Apiary documentation](http://docs.facebookcorrespondencecoordinatorapi.apiary.io/#)
+
+* DEV URL: [tbd]
+* LIVE URL: [tbd]
 
 [![Build Status](url)](url)
 
