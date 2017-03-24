@@ -7,7 +7,7 @@ The F.C.C. API is a high level coordinator application responsible for communica
 * DEV URL: [tbd]
 * LIVE URL: [tbd]
 
-[![Build Status](url)](url)
+[![Build Status](https://travis-ci.org/FrescoDev/facebook-correspondence-coordinator.svg?branch=master)](https://travis-ci.org/FrescoDev/facebook-correspondence-coordinator)
 
 ### Prerequisities
 
