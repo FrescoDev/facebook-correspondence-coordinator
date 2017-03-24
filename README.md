@@ -65,3 +65,7 @@ Response body:
         "description": "facebook-correspondence-coordinator",
         "status": "ok"
     }
+
+## System interaction diagram
+
+![diagram](http://i.imgur.com/CQ0z9H4.png)
