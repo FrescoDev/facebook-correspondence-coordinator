@@ -24,7 +24,8 @@ The F.C.C. API is a high level coordinator application responsible for communica
 1. Clone the repo
 2. Run: ```npm install``` to install project dependencies
 3. Run: ```npm run build``` to transpile and build the application
-4. Run: ```npm start``` to kickstart and run the server
+4. Run: ```npm start``` to kickstart and run the server http://localhost:4567/inbox/localChat/
+5. Navigate to: http://localhost:4567/inbox/localChat/ for local chat client UI.
 
 ### Run as Docker Container
 
