@@ -6,6 +6,8 @@ The F.C.C. API is a high level coordinator application responsible for communica
 
 * DEV URL: [https://d-fb-correspondence.herokuapp.com/]
 * LIVE URL: [https://fb-correspondence.herokuapp.com/]
+* DEV FB PAGE: [https://www.facebook.com/NioBi-Development-414974712209773/]
+* LIVE FB PAGE: [https://www.facebook.com/NioBiChat/]
 
 [![Build Status](https://travis-ci.org/FrescoDev/facebook-correspondence-coordinator.svg?branch=master)](https://travis-ci.org/FrescoDev/facebook-correspondence-coordinator)
 
