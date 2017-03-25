@@ -4,8 +4,8 @@ The F.C.C. API is a high level coordinator application responsible for communica
 
 [Apiary documentation](http://docs.facebookcorrespondencecoordinatorapi.apiary.io/#)
 
-* DEV URL: [tbd]
-* LIVE URL: [tbd]
+* DEV URL: [https://d-fb-correspondence.herokuapp.com/]
+* LIVE URL: [https://fb-correspondence.herokuapp.com/]
 
 [![Build Status](https://travis-ci.org/FrescoDev/facebook-correspondence-coordinator.svg?branch=master)](https://travis-ci.org/FrescoDev/facebook-correspondence-coordinator)
 
@@ -32,13 +32,12 @@ The F.C.C. API is a high level coordinator application responsible for communica
 ### Deploy to Heroku
 
 1. Run: ```heroku login``` and enter credentials
-2. Run: ```heroku create``` to create the app on Heroku
-3. Run: ```git push heroku master``` to activate the deployment
-4. Run: ```heroku ps:scale web=1git push heroku master``` to ensure at least one instance of the app is running
-5. Run: ```heroku open``` to visit the app's URL
-6. Run: ```heroku logs``` to view app logs
-7. Run: ```heroku addons:create deployhooks:http --url https://hooks.slack.com/services/{token}``` to add slack deploy hook
-8. Run: ```heroku apps:rename [newname]``` to rename the app
+2. Run: ```git push [environment] master``` to activate the deployment
+3. Run: ```heroku ps:scale web=1git push heroku master``` to ensure at least one instance of the app is running
+4. Run: ```heroku open``` to visit the app's URL
+5. Run: ```heroku logs``` to view app logs
+6. Run: ```heroku addons:create deployhooks:http --url https://hooks.slack.com/services/{token}``` to add slack deploy hook
+7. Run: ```heroku apps:rename [newname]``` to rename the app
 
 ## Running the Tests
 
