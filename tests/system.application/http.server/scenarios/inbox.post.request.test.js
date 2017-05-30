@@ -1,8 +1,9 @@
-import * as chai from 'chai';
-import server from '../test-helpers/server.mock';
-import userMessage from '../test-helpers/data.mock'
+import * as chai from 'chai'
 
-const expect = chai.expect;
+import server from '../testing.harness/mock.server'
+import userMessage from '../testing.harness/mock.data.factory'
+
+const expect = chai.expect
 
 describe('Call to POST a user message at /inbox endpoint', () => {
     describe('#200', () => {
@@ -14,9 +15,9 @@ describe('Call to POST a user message at /inbox endpoint', () => {
                     expect(res)
                         .to
                         .have
-                        .status(200);
-                    done();
-                });
-        });
-    });
-});
+                        .status(200)
+                    done()
+                })
+        })
+    })
+})

@@ -4,15 +4,14 @@
     "description": "facebook-correspondence-coordinator",
     "main": "index.js",
     "scripts": {
-        "build": "babel app -d build/app && babel app.service -d build/app.service",
+        "build": "babel src -d build",
         "postinstall": "npm run build",
         "clean": "rm -rf build && mkdir build",
         "start": "nodemon index.js",
         "start-dev": "babel-watch index.js",
-        "test": "mocha --recursive --reporter spec --compilers js:babel-register app.tests",
-        "test:watch": "nodemon --exec npm run test app.tests",
-        "validate": "npm run test && npm outdated --depth 0",
-        "heroku-prebuild": "npm install babel-cli babel-core babel-register babel-preset-es2015 babel-preset-stage-0"
+        "test": "mocha --recursive --reporter spec --compilers js:babel-register tests",
+        "test:watch": "nodemon --exec npm run test tests",
+        "validate": "npm run test && npm outdated --depth 0"
     },
     "repository": {
         "type": "git"
