@@ -1,3 +1,5 @@
+require('babel-polyfill')
+
 if (process.env.NODE_ENV === 'production') {
     module.exports = require('./correspondent.prod')
 } else {
