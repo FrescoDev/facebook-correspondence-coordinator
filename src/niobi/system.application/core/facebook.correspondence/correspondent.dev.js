@@ -23,21 +23,26 @@ correspondent.on('text', async(event) => {
     correspondent.sendText(id, 'Ok, Cool ')
 
     const domainContextId = estimateContext(text)
-    const sessionInitialiser = mapContextToNanoApp(domainContextId)
 
-    let appSession = sessionInitialiser()
-    const replyOption = appSession.application.permittedActions[0].descrition
-    const replyOptionId = appSession.application.permittedActions[0].id
+    if (domainContextId !== 'unknown') {
+        const sessionInitialiser = mapContextToNanoApp(domainContextId)
+        let appSession = sessionInitialiser()
 
-    correspondent.sendButtons(
-        id,
-        'Here\'s Some Options:', [
-            correspondent.createPostbackButton(
-                replyOption,
-                replyOptionId,
-            )
-        ]
-    );
+        const replyOption = appSession.application.permittedActions[0].descrition
+        const replyOptionId = appSession.application.permittedActions[0].id
+
+        correspondent.sendButtons(
+            id,
+            'Here\'s Some Options:', [
+                correspondent.createPostbackButton(
+                    replyOption,
+                    replyOptionId,
+                )
+            ]
+        );
+    } else {
+        correspondent.sendText(id, 'Sorry, couldn\'t find anything useful')
+    }
 })
 
 export default correspondent

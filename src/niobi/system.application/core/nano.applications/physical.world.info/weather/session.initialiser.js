@@ -1,5 +1,9 @@
 import uuidV4 from 'uuid/v4'
 
+/**
+ * Initialises a new weather data provider application session object
+ * @returns  {object} applicationSession The created new session application entity
+ */
 const sessionInitialiser = () => {
     const applicationSession = {
         id: uuidV4(),

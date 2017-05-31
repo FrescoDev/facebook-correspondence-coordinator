@@ -3,10 +3,11 @@
  * @param  {string} message The inbound user message
  */
 const estimateContext = (message) => {
-    if (message.search('weather')) {
+    if (message.search('weather') === 0) {
         return 'weather'
+    } else {
+        return 'unknown'
     }
-    return 'unknown'
 }
 
 export default estimateContext
