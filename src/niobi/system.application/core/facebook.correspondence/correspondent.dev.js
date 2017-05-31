@@ -16,7 +16,7 @@ correspondent.on('postback', event => {
     }
 })
 
-correspondent.on('text', async(event) => {
+correspondent.on('text', (event) => {
     const { id } = event.sender
     const { text } = event.message
 
