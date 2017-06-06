@@ -1,6 +1,6 @@
 import MetedataRequestHandler from './resources/metadata/get.request.handler'
 import { Router } from 'express'
-import correspondent from '../core/facebook.correspondence'
+import correspondent from '../core/facebook'
 
 const routes = new Router()
 
