@@ -6,7 +6,8 @@ const APP_DOMAIN_REGISTRY = {
 
 /**
  * Maps the domain context to a nano app domain
- * @param  {string} context The domain context identifier
+ * @param  {string} contextId The domain context identifier
+ * @return  {object} Returns an instantiation of the interaction application session object
  */
 const mapContextToNanoApp = (contextId) => {
     if (contextId === APP_DOMAIN_REGISTRY.WEATHER_DOMAIN_ID) {
